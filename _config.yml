@@ -22,14 +22,14 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile1.png"
+  name             : "Li Haitian"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : ""
+  location         : "Singapore"
+  employer         : "NTU"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "liha0032@e.ntu.edu.sg" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
