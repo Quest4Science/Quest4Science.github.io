@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: #"Li Haitian - AI Researcher in Computer Vision"
+# title: "Li Haitian - AI Researcher in Computer Vision"
 author_profile: true
 redirect_from:
   - /about/
