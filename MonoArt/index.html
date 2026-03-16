@@ -1,0 +1,179 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="title" content="MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction">
+  <meta name="description" content="MonoArt: A unified framework grounded in progressive structural reasoning for reconstructing articulated 3D objects from a single image.">
+  <meta name="keywords" content="MonoArt, articulated 3D reconstruction, monocular reconstruction, computer vision, 3D vision, deep learning">
+  <meta name="author" content="Haitian Li, Haozhe Xie, Junxiang Xu, Beichen Wen, Fangzhou Hong, Ziwei Liu">
+
+  <title>MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</title>
+
+  <link rel="icon" type="image/jpeg" href="/images/me.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="/">Haitian Li</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.infinitescript.com/about/">Haozhe Xie</a><sup>*</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://linkedin.com/in/junxiang-xu-324812328">Junxiang Xu</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/wenbc21">Beichen Wen</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://hongfz16.github.io/">Fangzhou Hong</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>&dagger;</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">S-Lab, Nanyang Technological University</span><br>
+              <span class="is-size-6"><sup>*</sup>Equal Contribution&nbsp;&nbsp;<sup>&dagger;</sup>Corresponding Author</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/_ECCV2026__MonoArt.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- TODO: Uncomment when available -->
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/XXXX.XXXXX" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/YOUR_REPO" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser Figure -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/teaser0301.jpg" alt="MonoArt Teaser" style="width: 100%;">
+        <h2 class="subtitle has-text-centered" style="margin-top: 1em;">
+          <b>(Left)</b> Qualitative results of SINGAPO, Articulate-Anything (ArtAny), PhysX-Anything (PhysXAny), and MonoArt on diverse objects.
+          <b>(Right)</b> F-score vs. inference time on the PartNet-Mobility test set. MonoArt achieves the highest F-score with substantially lower inference time.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract Section -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Reconstructing articulated 3D objects from a single image requires jointly inferring object geometry, part structure, and motion parameters from limited visual evidence. A key difficulty lies in the entanglement between motion cues and object structure, which makes direct articulation regression unstable. Existing methods address this challenge through multi-view supervision, retrieval-based assembly, or auxiliary video generation, often sacrificing scalability or efficiency. We present <b>MonoArt</b>, a unified framework grounded in progressive structural reasoning. Rather than predicting articulation directly from image features, MonoArt progressively transforms visual observations into canonical geometry, structured part representations, and motion-aware embeddings within a single architecture. This structured reasoning process enables stable and interpretable articulation inference without external motion templates or multi-stage pipelines. Extensive experiments on PartNet-Mobility demonstrate that MonoArt achieves state-of-the-art performance in both reconstruction accuracy and inference speed. The framework further generalizes to robotic manipulation and articulated scene reconstruction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method Overview -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Method Overview</h2>
+          <img src="static/images/method.jpg" alt="MonoArt Method Overview" style="width: 100%;">
+          <div class="content has-text-justified" style="margin-top: 1em;">
+            <p>
+              <b>Overview of MonoArt.</b> Given a single input image, <b>TRELLIS-based 3D Generator</b> reconstructs a canonical 3D shape.
+              <b>Part-aware Semantic Reasoner</b> derives tri-plane-based part embeddings through tri-linear interpolation, triplane projection, and a part contrast transformer.
+              <b>Dual-Query Motion Decoder</b> initializes position and content queries and performs iterative motion reasoning through refinement blocks.
+              <b>Kinematic Estimator</b> predicts part-level articulation parameters (motion type, origin, axis, limits) and infers the kinematic tree structure via pairwise affinity and parent assignment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX Section -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{li2025monoart,
+  title={MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction},
+  author={Li, Haitian and Xie, Haozhe and Xu, Junxiang and Wen, Beichen and Hong, Fangzhou and Liu, Ziwei},
+  year={2025}
+}</code></pre>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content has-text-centered">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
