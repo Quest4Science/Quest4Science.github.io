@@ -9,28 +9,20 @@ author_profile: true
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
-{% include base_path %}
+<br>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+<div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+  <div style="flex: 0 0 280px; margin-right: 20px;">
+    <img src="/images/paper/trans-adapter.gif" alt="Trans-Adapter" style="width: 100%; border-radius: 4px;">
+  </div>
+  <div style="flex: 1;">
+    <strong style="font-size: 1.05em;">Trans-Adapter: A Plug-and-Play Framework for Transparent Image Inpainting</strong><br>
+    <em>International Conference on Computer Vision (ICCV), 2025</em><br>
+    <span>Yuekun Dai, <strong>Haitian Li</strong>, Shangchen Zhou, and Chen Change Loy</span><br>
+    <div style="margin-top: 8px;">
+      <a href="https://ykdai.github.io/projects/trans-adapter" style="margin-right: 10px;">[Project]</a>
+      <a href="https://arxiv.org/abs/2508.01098" style="margin-right: 10px;">[Paper]</a>
+      <a href="https://github.com/ykdai/trans-adapter">[Code]</a>
+    </div>
+  </div>
+</div>

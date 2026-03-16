@@ -1,15 +1,34 @@
 ---
 permalink: /
-title: "Li Haitian- AI Researcher in Computer Vision"
+title: #"Li Haitian - AI Researcher in Computer Vision"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-Welcome to my personal academic website! I am Li Haitian, a Master's student in Artificial Intelligence (MSAI) at Nanyang Technological University (NTU). As I embark on my academic journey, I am deeply passionate about the field of computer vision and its potential to transform the world for the better.
+## About Me
 
-My research interests lie in exploring advanced AI methodologies, particularly in 2D and 3D generation, reconstruction, and editing within computer vision. I believe that through rigorous study and innovation, AI can drive positive change across various industries and improve lives globally. This website serves as a platform to share my work, publications, and academic endeavors.
+I am Haitian Li, a Master's student in Artificial Intelligence (MSAI) at Nanyang Technological University (NTU), at MMLab@NTU, under the supervision of Research Fellow <a href="https://www.infinitescript.com/about/">Haozhe Xie</a> and Prof. <a href="https://liuziwei7.github.io/">Ziwei Liu</a>. Previously, I obtained my Bachelor's degree from Wuhan University.
 
-Feel free to explore my research, projects, and thoughts on AI. Let's connect and contribute to the future of artificial intelligence together!
+My research focuses on computer vision, particularly 3D vision. I am motivated by the potential of AI to enhance productivity and make a positive impact on the world.
 
+---
+
+## Publications <a href="https://scholar.google.com/citations?user=oRN_HLQAAAAJ&hl=en" style="font-size: 0.7em; margin-left: 8px;">[Google Scholar]</a>
+
+<div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+  <div style="flex: 0 0 280px; margin-right: 20px;">
+    <img src="/images/paper/trans-adapter.gif" alt="Trans-Adapter" style="width: 100%; border-radius: 4px;">
+  </div>
+  <div style="flex: 1;">
+    <strong style="font-size: 1.05em;">Trans-Adapter: A Plug-and-Play Framework for Transparent Image Inpainting</strong><br>
+    <em>International Conference on Computer Vision (ICCV), 2025</em><br>
+    <span>Yuekun Dai, <strong>Haitian Li</strong>, Shangchen Zhou, and Chen Change Loy</span><br>
+    <div style="margin-top: 8px;">
+      <a href="https://ykdai.github.io/projects/trans-adapter" style="margin-right: 10px;">[Project]</a>
+      <a href="https://arxiv.org/abs/2508.01098" style="margin-right: 10px;">[Paper]</a>
+      <a href="https://github.com/ykdai/trans-adapter">[Code]</a>
+    </div>
+  </div>
+</div>
