@@ -17,8 +17,8 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
 
 ## Publications <a href="https://scholar.google.com/citations?user=oRN_HLQAAAAJ&hl=en" style="font-size: 0.7em; margin-left: 8px;">[Google Scholar]</a>
 
-<div style="display: flex; flex-direction: row; margin-bottom: 20px;">
-  <div style="flex: 0 0 280px; margin-right: 20px;">
+<div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 0 0 280px; max-width: 100%; margin-right: 20px; margin-bottom: 10px;">
     <img src="/images/paper/trans-adapter.gif" alt="Trans-Adapter" style="width: 100%; border-radius: 4px;">
   </div>
   <div style="flex: 1;">
