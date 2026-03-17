@@ -122,6 +122,10 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 
+# Disable jekyll-titles-from-headings (bundled in github-pages gem)
+titles_from_headings:
+  enabled: false
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
