@@ -148,6 +148,76 @@ layout: null
     </div>
   </section>
 
+  <!-- Applications Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full">
+          <h2 class="title is-3">Applications</h2>
+
+          <!-- Robot Manipulation -->
+          <h3 class="title is-4" style="margin-top: 1.5em;">Robot Manipulation</h3>
+          <div class="content has-text-justified">
+            <p>
+              MonoArt extends beyond static 3D reconstruction by inferring articulation axes, joint types, and motion limits that are directly usable for robotic control. These structured kinematic priors convert monocular observations into actionable parameters, enabling motion reasoning and interaction planning without manual joint annotation. The reconstructed articulated objects can be directly imported into IsaacSim and manipulated by a Franka robot arm for contact-rich tasks such as grasping and opening, demonstrating a practical real-to-sim pipeline for robotic interaction and policy learning.
+            </p>
+          </div>
+          <div class="columns is-multiline is-centered">
+            <div class="column is-3">
+              <video autoplay loop muted playsinline style="width: 100%; border-radius: 8px;">
+                <source src="static/images/application/robot_manipulation/1.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-3">
+              <video autoplay loop muted playsinline style="width: 100%; border-radius: 8px;">
+                <source src="static/images/application/robot_manipulation/2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-3">
+              <video autoplay loop muted playsinline style="width: 100%; border-radius: 8px;">
+                <source src="static/images/application/robot_manipulation/3.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-3">
+              <video autoplay loop muted playsinline style="width: 100%; border-radius: 8px;">
+                <source src="static/images/application/robot_manipulation/4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <p class="has-text-centered" style="margin-top: 0.5em; color: #4a4a4a;">
+            <b>Robot manipulation with generated articulated objects.</b> MonoArt reconstructions are directly imported into IsaacSim for contact-rich interaction.
+          </p>
+
+          <!-- Articulated Scene Reconstruction -->
+          <h3 class="title is-4" style="margin-top: 2.5em;">Articulated Scene Reconstruction</h3>
+          <div class="content has-text-justified">
+            <p>
+              By combining MonoArt with scene-level reconstruction methods such as SAM3D, which provide static scene reconstructions with per-object masks and 6D poses, we can recover both geometry and articulation parameters for each masked object instance. The reconstructed articulated objects are then placed back into the scene using their estimated 6D poses, converting rigid scene reconstructions into functionally operable environments where articulated objects preserve their kinematic structure while remaining consistent with the global layout.
+            </p>
+          </div>
+          <div class="columns is-multiline is-centered is-vcentered">
+            <div class="column is-3">
+              <img src="static/images/application/Articulated_Scene_Reconstruction/1.png" alt="Scene input" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div class="column is-3">
+              <img src="static/images/application/Articulated_Scene_Reconstruction/2.gif" alt="Object instances" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div class="column is-3">
+              <img src="static/images/application/Articulated_Scene_Reconstruction/3.png" alt="Scene input 2" style="width: 100%; border-radius: 8px;">
+            </div>
+            <div class="column is-3">
+              <img src="static/images/application/Articulated_Scene_Reconstruction/4.gif" alt="Articulated scene" style="width: 100%; border-radius: 8px;">
+            </div>
+          </div>
+          <p class="has-text-centered" style="margin-top: 0.5em; color: #4a4a4a;">
+            <b>Articulated scene reconstruction.</b> MonoArt augments SAM3D with object-level articulation recovery to produce articulated, operable 3D scenes.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BibTeX Section -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
