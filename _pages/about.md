@@ -18,7 +18,7 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
 
 <div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 0 0 280px; max-width: 100%; margin-right: 20px; margin-bottom: 10px;">
-    <img src="/images/paper/monoart-teaser.jpg" alt="MonoArt" style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;">
+    <video src="/images/paper/Monoart.mp4" alt="MonoArt" autoplay loop muted playsinline style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;"></video>
   </div>
   <div style="flex: 1;">
     <strong style="font-size: 1.05em;">MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</strong><br>
