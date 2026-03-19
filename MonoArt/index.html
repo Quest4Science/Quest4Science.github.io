@@ -49,10 +49,10 @@ layout: null
                 <a href="https://www.infinitescript.com/about/">Haozhe Xie</a><sup>*</sup>,
               </span>
               <span class="author-block">
-                <a href="https://linkedin.com/in/junxiang-xu-324812328">Junxiang Xu</a>,
+                <a style="color: inherit; cursor: default; text-decoration: none; pointer-events: none;">Junxiang Xu</a>,
               </span>
               <span class="author-block">
-                <a href="https://github.com/wenbc21">Beichen Wen</a>,
+                <a style="color: inherit; cursor: default; text-decoration: none; pointer-events: none;">Beichen Wen</a>,
               </span>
               <span class="author-block">
                 <a href="https://hongfz16.github.io/">Fangzhou Hong</a>,
@@ -173,7 +173,7 @@ layout: null
           <h3 class="title is-4" style="margin-top: 1.5em;">Robot Manipulation</h3>
           <div class="content has-text-justified">
             <p>
-              MonoArt extends beyond static 3D reconstruction by inferring articulation axes, joint types, and motion limits that are directly usable for robotic control. These structured kinematic priors convert monocular observations into actionable parameters, enabling motion reasoning and interaction planning without manual joint annotation. The reconstructed articulated objects can be directly imported into IsaacSim and manipulated by a Franka robot arm for contact-rich tasks such as grasping and opening, demonstrating a practical real-to-sim pipeline for robotic interaction and policy learning.
+              MonoArt infers articulation axes, joint types, and motion limits that can be directly used for robotic control. The reconstructed objects are imported into IsaacSim and manipulated by a Franka robot arm for contact-rich tasks such as grasping and opening, enabling a practical real-to-sim pipeline.
             </p>
           </div>
           <div class="columns is-multiline is-centered">
@@ -206,7 +206,7 @@ layout: null
           <h3 class="title is-4" style="margin-top: 2.5em;">Articulated Scene Reconstruction</h3>
           <div class="content has-text-justified">
             <p>
-              By combining MonoArt with scene-level reconstruction methods such as SAM3D, which provide static scene reconstructions with per-object masks and 6D poses, we can recover both geometry and articulation parameters for each masked object instance. The reconstructed articulated objects are then placed back into the scene using their estimated 6D poses, converting rigid scene reconstructions into functionally operable environments where articulated objects preserve their kinematic structure while remaining consistent with the global layout.
+              By combining MonoArt with SAM3D, we recover geometry and articulation parameters for each object instance using per-object masks and 6D poses. The articulated objects are placed back into the scene, converting rigid reconstructions into functionally operable environments.
             </p>
           </div>
           <div class="columns is-multiline is-centered is-vcentered">
