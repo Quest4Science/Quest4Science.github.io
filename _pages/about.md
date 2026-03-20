@@ -26,7 +26,7 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
     <span><strong>Haitian Li</strong><sup>*</sup>, Haozhe Xie<sup>*</sup>, Junxiang Xu, Beichen Wen, Fangzhou Hong, and Ziwei Liu</span><br>
     <div style="margin-top: 8px;">
       <a href="/MonoArt/" style="margin-right: 10px;">[Project]</a>
-      <span style="color: #999; margin-right: 10px;">[Paper coming soon]</span>
+      <a href="https://arxiv.org/abs/2603.19231" style="margin-right: 10px;">[Paper]</a>
       <a href="https://github.com/Quest4Science/MonoArt">[Code]</a>
     </div>
   </div>
