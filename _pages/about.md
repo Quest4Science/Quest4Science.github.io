@@ -36,7 +36,7 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
   </div>
   <div style="flex: 1;">
     <strong style="font-size: 1.05em;">MonoArt: Progressive Structural Reasoning for Monocular Articulated 3D Reconstruction</strong><br>
-    <em>arXiv, 2026</em><br>
+    <em>European Conference on Computer Vision (ECCV), 2026</em><br>
     <span><strong>Haitian Li</strong><sup>*</sup>, Haozhe Xie<sup>*</sup>, Junxiang Xu, Beichen Wen, Fangzhou Hong, and Ziwei Liu</span><br>
     <div style="margin-top: 8px;">
       <a href="/MonoArt/" style="margin-right: 10px;">[Project]</a>
