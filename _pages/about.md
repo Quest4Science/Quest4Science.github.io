@@ -18,7 +18,7 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
 
 <div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 0 0 280px; max-width: 100%; margin-right: 20px; margin-bottom: 10px;">
-    <img src="/images/paper/teaserPhysx.png" alt="PhysX-Omni" style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;">
+    <img src="/images/paper/teaserPhysx.webp" alt="PhysX-Omni" style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;">
   </div>
   <div style="flex: 1;">
     <strong style="font-size: 1.05em;">PhysX-Omni: Unified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects</strong><br>
@@ -48,7 +48,7 @@ My research focuses on computer vision, particularly 3D vision. I am motivated b
 
 <div style="display: flex; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 0 0 280px; max-width: 100%; margin-right: 20px; margin-bottom: 10px;">
-    <img src="/images/paper/trans-adapter.gif" alt="Trans-Adapter" style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;">
+    <video src="/images/paper/trans-adapter.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 4px; object-fit: cover; aspect-ratio: 4/3;"></video>
   </div>
   <div style="flex: 1;">
     <strong style="font-size: 1.05em;">Trans-Adapter: A Plug-and-Play Framework for Transparent Image Inpainting</strong><br>
