@@ -10,7 +10,7 @@ redirect_from:
 
 I am Haitian Li, a Master's student in Artificial Intelligence (MSAI) at Nanyang Technological University (NTU), at MMLab@NTU, under the supervision of Research Fellow <a href="https://www.infinitescript.com/about/">Haozhe Xie</a> and Prof. <a href="https://liuziwei7.github.io/">Ziwei Liu</a>. Previously, I obtained my Bachelor's degree from Wuhan University.
 
-My research focuses on computer vision, particularly 3D vision. I am motivated by the potential of AI to enhance productivity and make a positive impact on the world.
+My research focuses on computer vision, especially 3D vision, and more recently on embodied AI. I am motivated by the potential of AI to enhance productivity and make a positive impact on the world.
 
 ---
 
