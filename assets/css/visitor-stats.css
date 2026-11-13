@@ -1,0 +1,30 @@
+/* Scoped so the same compact panel works across the site's different themes. */
+[data-visitor-stats] { width: 100%; margin: 18px 0 0; }
+.visitor-stats { --vs-ink: #554e60; --vs-muted: #726b7b; --vs-line: #e4dce7; --vs-bg: #fffcf9; max-width: 560px; font-family: inherit; font-size: 13px; line-height: 1.6; color: var(--vs-ink); }
+.visitor-stats > summary { display: inline-flex; align-items: center; gap: 7px; padding: 6px 0; color: var(--vs-muted); font-size: 12px; font-weight: 600; cursor: pointer; list-style: none; }
+.visitor-stats > summary::-webkit-details-marker { display: none; }
+.visitor-stats > summary:hover { color: #71598b; }
+.visitor-stats > summary:focus-visible, .visitor-stats a:focus-visible, .visitor-stats button:focus-visible { outline: 2px solid #71598b; outline-offset: 4px; }
+.visitor-stats > summary svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 1.8; fill: none; stroke-linecap: round; }
+.visitor-stats .vs-chevron { margin-left: 4px; transition: transform .18s; }
+.visitor-stats[open] .vs-chevron { transform: rotate(180deg); }
+.visitor-stats .vs-panel { padding: 20px; margin-top: 8px; border: 1px solid var(--vs-line); border-radius: 12px; background: var(--vs-bg); }
+.visitor-stats .vs-heading, .visitor-stats .vs-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.visitor-stats .vs-heading { margin-bottom: 16px; }
+.visitor-stats .vs-heading > span { font-size: 11px; color: var(--vs-muted); }
+.visitor-stats .vs-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 18px; }
+.visitor-stats .vs-metrics > div { padding: 12px 14px; background: #f3edf6; border-radius: 8px; }
+.visitor-stats .vs-metrics > div:last-child { background: #edf3f1; }
+.visitor-stats .vs-metrics span { display: block; font-size: 12px; }
+.visitor-stats .vs-metrics strong { display: block; font-size: clamp(18px, 3.5vw, 26px); font-weight: 700; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.visitor-stats .vs-row { padding: 8px 0; border-bottom: 1px solid var(--vs-line); font-variant-numeric: tabular-nums; }
+.visitor-stats .vs-row > span:last-child { text-align: right; }
+.visitor-stats .vs-table-heading { color: var(--vs-muted); font-size: 11px; }
+.visitor-stats a { color: #71598b; text-decoration: none; }
+.visitor-stats a:hover { text-decoration: underline; }
+.visitor-stats .vs-dashboard { display: inline-block; margin-top: 12px; font-size: 12px; font-weight: 650; }
+.visitor-stats p.vs-note, .visitor-stats p.vs-status { margin: 10px 0 0; padding: 0; font-size: 11px; font-weight: 400; line-height: 1.65; color: var(--vs-muted); }
+.visitor-stats .vs-retry { margin-top: 8px; padding: 4px 10px; color: #71598b; border: 1px solid var(--vs-line); border-radius: 5px; background: transparent; font: inherit; font-size: 12px; cursor: pointer; }
+.visitor-stats .vs-retry[hidden] { display: none; }
+@media (max-width: 480px) { .visitor-stats .vs-panel { padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { .visitor-stats .vs-chevron { transition: none; } }
